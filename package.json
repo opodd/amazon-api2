@@ -2,17 +2,21 @@
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "sls:deploy": "serverless deploy",
+    "sls:remove": "serverless remove"
   },
   "dependencies": {
+    "@hono/aws-lambda": "^0.1.4",
     "@hono/graphql-server": "^0.4.3",
-    "@vercel/node": "^3.0.15",
     "any-date-parser": "^1.5.4",
     "hono": "^4.3.1",
     "linkedom": "^0.16.11"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240403.0",
+    "serverless": "^3.38.0",
+    "serverless-plugin-typescript": "^2.1.5",
     "typescript": "^5.2.2",
     "wrangler": "^3.47.0"
   },
