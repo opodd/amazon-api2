@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import routes from "@/routes";
 import graphql from "@/graphql";
 import { HTTPException } from "hono/http-exception";
+import { handle } from '@hono/aws-lambda'
 
 const app = new Hono();
 
@@ -20,3 +21,6 @@ app.onError((err, c) => {
 });
 
 export default app;
+
+// Add Lambda handler
+export const handler = handle(app);
