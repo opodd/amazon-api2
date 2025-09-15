@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "@hono/graphql-server": "^0.4.3",
+    "@vercel/node": "^3.0.15",
     "any-date-parser": "^1.5.4",
     "hono": "^4.3.1",
     "linkedom": "^0.16.11"
@@ -13,7 +14,7 @@
     "@cloudflare/workers-types": "^4.20240403.0",
     "wrangler": "^3.47.0"
   },
-  "name": "amazon-api2",
+  "name": "amazon-api",
   "description": "This project is a comprehensive edge API for Amazon. It supports search and product endpoints. The search endpoint allows you to search for products on Amazon. The product endpoint allows you to get product details by ASIN. This API supports both `REST` and `GraphQL` endpoints.",
   "version": "2.0.0",
   "main": "src/index.ts",
