@@ -71,6 +71,8 @@ Cheers 🎉
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/tuhinpal/amazon-api)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/opodd/amazon-api2)
+
 ## Implented country versions 🌍
 
 | Country      | Code | Base URL                                   | Implementation |
